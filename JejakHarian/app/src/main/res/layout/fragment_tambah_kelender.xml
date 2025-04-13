@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="@string/Judul_Kalender"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editTextJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/edit_shape"
+        android:hint="Masukkan judul"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <!-- Keterangan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="@string/keterangan_Kalender"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="2dp"
+        android:background="@drawable/edit_shape"
+        android:gravity="top"
+        android:hint="@string/Masukkan_Keterangan_Kalender"
+        android:padding="10dp"
+        android:inputType="textMultiLine" />
+
+    <!-- Tanggal dan Waktu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <!-- Tanggal -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:text="Tanggal"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editTextTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_shape"
+                android:drawableEnd="@drawable/baseline_calendar_today_24"
+                android:hint="Pilih tanggal"
+                android:focusable="false"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!-- Waktu -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:text="Waktu"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editTextWaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_shape"
+                android:drawableEnd="@drawable/baseline_access_time_24"
+                android:hint="Pilih waktu"
+                android:focusable="false"
+                android:padding="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Tambah"
+        android:background="@drawable/edit_shape"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:foreground="?attr/selectableItemBackground"
+        android:elevation="2dp" />
+</LinearLayout>

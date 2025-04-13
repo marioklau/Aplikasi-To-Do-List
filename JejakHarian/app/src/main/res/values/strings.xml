@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Jejak Harian</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Catatan">Catatan</string>
+    <string name="Beranda">Beranda</string>
+    <string name="Kalender">Kalender</string>
+    <string name="Judul_Kalender">Judul</string>
+    <string name="masukkan_judul">Masukkan judul</string>
+    <string name="keterangan_Kalender">Keterangan</string>
+    <string name="Masukkan_Keterangan_Kalender">Masukkan keterangan</string>
+    <string name="pilih_tanggal_kalender">Pilih tanggal</string>
+    <string name="tanggal_kalender">Tanggal</string>
+    <string name="catatan">Catatan</string>
+    <string name="tambah_catatan">Tambah Catatan..</string>
+    <string name="tambah">Tambah</string>
+    <string name="Jadwal">jadwal</string>
+
+</resources>
